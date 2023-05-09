@@ -1,0 +1,17 @@
+.Footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+  }
+  
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
+  
+  .social-icon a {
+    margin-right: 15px;
+  }
