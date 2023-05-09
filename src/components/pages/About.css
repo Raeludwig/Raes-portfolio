@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  width: 300px;
+}
+
+.side {
+  flex: 1;
+  padding: 10px;
+}
+
+.side-content-center {
+  display: flex;
+  align-items: center;
+}
