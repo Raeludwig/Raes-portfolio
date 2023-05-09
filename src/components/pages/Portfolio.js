@@ -1,5 +1,4 @@
 import React from "react";
-import { Grid } from "react-visual-grid";
 
 export default function Portfolio(props) {
   const cardStyle = {
@@ -7,14 +6,8 @@ export default function Portfolio(props) {
     margin: "1rem",
   };
 
-  const images = [
-    process.env.PUBLIC_URL + "/job-finder.png",
-    process.env.PUBLIC_URL + "/moon-dollars.png",
-  ];
-
   return (
     <div>
-      <Grid images={images} gridLayout="horizontal" width={1800} height={1200} />
       <h1>Portfolio</h1>
       <div className="container" style={{ display: "grid" }}>
         <div className="card" style={cardStyle}>
