@@ -42,40 +42,40 @@ export default function Portfolio(props) {
         </div>
 
         <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+          <a href="https://desolate-meadow-93910.herokuapp.com/">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/JATE.png"}
               alt="Card cap"
             />
           </a>
         </div>
 
         <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+          <a href="https://raeludwig.github.io/calendar-application-M5/">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/scheduler.png"}
               alt="Card cap"
             />
           </a>
         </div>
 
         <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+          <a href="https://raeludwig.github.io/password-generator/">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/password-generator.png"}
               alt="Card cap"
             />
           </a>
         </div>
 
         <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+          <a href="https://damp-beyond-37122.herokuapp.com/">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/tech-blog-post.png"}
               alt="Card cap"
             />
           </a>
