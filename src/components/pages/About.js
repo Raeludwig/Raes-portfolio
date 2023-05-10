@@ -1,6 +1,6 @@
 import React from 'react';
 import{motion} from 'framer-motion';
-import 'C:/Users/Rachel/bootcamp/Rae-s-portfolio/src/components/pages/styles/About.css';
+import "./styles/About.css";
 
 export default function About() {
   const imgStyle = {

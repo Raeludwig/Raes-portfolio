@@ -1,7 +1,8 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
-import 'C:/Users/Rachel/bootcamp/Rae-s-portfolio/src/components/pages/styles/About.css';
-import 'C:/Users/Rachel/bootcamp/Rae-s-portfolio/src/components/pages/styles/Footer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import About from "./components/pages/About";
+import Footer from './components/Footer';
 
 
 function App() {
