@@ -19,7 +19,7 @@ export default function About() {
       >Rae Ludwig</motion.h1>
     <div class="container">
       
-      <motion.img 
+      <motion.img class="img"
       initial={{y:-2250}}
       animate={{y:-10}}
       class="side" id="img" style={imgStyle} src={process.env.PUBLIC_URL + "/rae.jpg"}

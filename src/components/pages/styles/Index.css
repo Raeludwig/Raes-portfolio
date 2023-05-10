@@ -25,14 +25,13 @@ margin-right:30px;
    background-color: #F7CD46;
 }
 
-/* #5AC3B0 teal #DE5935  red   #F7CD46 yellow*/
-
 .nav-link {
   color: #DE5935;
 }
 
 footer {
   background-color: #F7CD46;
+  margin-top:30px;
 }
 
 .currentPage{
