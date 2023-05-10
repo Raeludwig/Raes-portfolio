@@ -8,7 +8,7 @@ export default function Resume() {
        initial={{y:-250}}
        animate={{y:10}} 
       >Resume</motion.h1>
-      <p>
+      <p class="container">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
         ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras

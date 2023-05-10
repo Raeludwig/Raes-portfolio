@@ -8,7 +8,7 @@ export default function Contact() {
       initial={{y:-250}}
       animate={{y: 0}}
       >Contact Page</motion.h1>
-      <p>
+      <p class="container">
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
         magna a ultrices. Aenean pellentesque placerat lacus imperdiet

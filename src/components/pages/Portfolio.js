@@ -10,6 +10,11 @@ export default function Portfolio(props) {
   const images = [
     process.env.PUBLIC_URL + "/job-finder.png",
     process.env.PUBLIC_URL + "/moon-dollars.png",
+    process.env.PUBLIC_URL + "/coming-soon.png",
+
+  
+
+
   ];
 
   const gridStyle = {
@@ -25,7 +30,11 @@ export default function Portfolio(props) {
       animate={{y:10}}
       >Portfolio</motion.h1>
       <div className="container" style={gridStyle}>
-        <div className="card" style={cardStyle}>
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
           <a href="https://raeludwig.github.io/Forked_Job_Finder/">
             <img
               className="card-img-top"
@@ -33,9 +42,13 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
+        <motion.div
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
           <a href="https://whispering-garden-84047.herokuapp.com/">
             <img
               className="card-img-top"
@@ -43,9 +56,13 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
           <a href="https://desolate-meadow-93910.herokuapp.com/">
             <img
               className="card-img-top"
@@ -53,9 +70,13 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
+        <motion.div
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
           <a href="https://raeludwig.github.io/calendar-application-M5/">
             <img
               className="card-img-top"
@@ -63,9 +84,13 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+         className="card" style={cardStyle}>
           <a href="https://raeludwig.github.io/password-generator/">
             <img
               className="card-img-top"
@@ -73,9 +98,13 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
           <a href="https://damp-beyond-37122.herokuapp.com/">
             <img
               className="card-img-top"
@@ -83,37 +112,49 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
+           <a href="https://github.com/Raeludwig?tab=repositories">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/coming-soon.png"}
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
+          <a href="https://github.com/Raeludwig?tab=repositories">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/coming-soon.png"}
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="card" style={cardStyle}>
-          <a href="https://whispering-garden-84047.herokuapp.com/">
+        <motion.div 
+         whileHover={{ scale: 1.2 }}
+         onHoverStart={e => {}}
+         onHoverEnd={e => {}}
+        className="card" style={cardStyle}>
+          <a href="https://github.com/Raeludwig?tab=repositories">
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/moon-dollars.png"}
+              src={process.env.PUBLIC_URL + "/coming-soon.png"}
               alt="Card cap"
             />
           </a>
-        </div>
+        </motion.div>
 
 
       </div>

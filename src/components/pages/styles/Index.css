@@ -1,0 +1,32 @@
+body {
+  font-family: 'Alkalami', serif;
+  width: 100%;
+}
+
+.container {
+  background-color: #5AC3B0;
+  width: 100%;
+  margin: 0 auto;
+  color:white;
+
+}
+
+.nav-tabs,
+.nav nav-tabs {
+  background-color: #F7CD46;
+
+}
+
+/* #5AC3B0 teal #DE5935  red   #F7CD46 yellow*/
+
+.nav-link {
+  color: #DE5935;
+}
+
+footer {
+  background-color: #F7CD46;
+}
+
+.currentPage{
+  background-color:purple;
+}
