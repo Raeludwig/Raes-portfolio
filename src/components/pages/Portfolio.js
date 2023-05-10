@@ -29,6 +29,7 @@ export default function Portfolio(props) {
       initial={{y:-250}}
       animate={{y:10}}
       >Portfolio</motion.h1>
+      
       <div className="container" style={gridStyle}>
         <motion.div 
          whileHover={{ scale: 1.2 }}

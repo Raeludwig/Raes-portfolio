@@ -1,6 +1,7 @@
 body {
   font-family: 'Alkalami', serif;
   width: 100%;
+  font-weight: bolder;
 }
 
 .container {
@@ -11,10 +12,17 @@ body {
 
 }
 
-.nav-tabs,
-.nav nav-tabs {
-  background-color: #F7CD46;
+.nav-tabs{
+ 
+  font-family: 'Amatic SC', cursive;
+  font-size: larger;
+  display: flex;
+justify-content: right;
+margin-right:30px;
+}
 
+#header{
+   background-color: #F7CD46;
 }
 
 /* #5AC3B0 teal #DE5935  red   #F7CD46 yellow*/
@@ -29,4 +37,8 @@ footer {
 
 .currentPage{
   background-color:purple;
+}
+
+h1{
+  font-family: 'Caveat', cursive;
 }
