@@ -35,10 +35,11 @@ export default function Portfolio(props) {
          whileHover={{ scale: 1.2 }}
          onHoverStart={e => {}}
          onHoverEnd={e => {}}
-        className="card" style={cardStyle}>
+         className="card" style={{...cardStyle, position: 'relative'}}>
           <a href="https://raeludwig.github.io/Forked_Job_Finder/">
-            <img
-              className="card-img-top"
+            <img 
+            style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            className="card-img-top"
               src={process.env.PUBLIC_URL + "/job-finder.png"}
               alt="Card cap"
             />
@@ -52,6 +53,7 @@ export default function Portfolio(props) {
         className="card" style={cardStyle}>
           <a href="https://whispering-garden-84047.herokuapp.com/">
             <img
+            style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
               className="card-img-top"
               src={process.env.PUBLIC_URL + "/moon-dollars.png"}
               alt="Card cap"
@@ -60,18 +62,19 @@ export default function Portfolio(props) {
         </motion.div>
 
         <motion.div 
-         whileHover={{ scale: 1.2 }}
-         onHoverStart={e => {}}
-         onHoverEnd={e => {}}
-        className="card" style={cardStyle}>
-          <a href="https://desolate-meadow-93910.herokuapp.com/">
-            <img
-              className="card-img-top"
-              src={process.env.PUBLIC_URL + "/JATE.png"}
-              alt="Card cap"
-            />
-          </a>
-        </motion.div>
+   whileHover={{ scale: 1.2 }}
+   onHoverStart={e => {}}
+   onHoverEnd={e => {}}
+   className="card" style={{...cardStyle, position: 'relative'}}>
+  <a href="https://desolate-meadow-93910.herokuapp.com/">
+    <img
+      style={{ objectFit: 'cover', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+      className="card-img-top"
+      src={process.env.PUBLIC_URL + "/JATE.png"}
+      alt="Card cap"
+    />
+  </a>
+</motion.div>
 
         <motion.div
          whileHover={{ scale: 1.2 }}

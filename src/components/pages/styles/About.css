@@ -6,11 +6,13 @@
 .side {
   flex: 1;
   padding: 10px;
+  
 }
 
 .side-content-center {
   display: flex;
   align-items: center;
+  
 }
 
 p{
@@ -18,8 +20,8 @@ p{
   font-family: 'Amatic SC', cursive;
 }
 
-.img{
-  border: 
-
-
+img.side{
+  border: 5px dotted #DE5935;
+  justify-content: center;
+  align-items: center;
 }
