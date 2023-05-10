@@ -1,9 +1,13 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Page</h1>
+      <motion.h1 
+      initial={{y:-250}}
+      animate={{y: 0}}
+      >Contact Page</motion.h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet

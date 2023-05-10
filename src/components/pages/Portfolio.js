@@ -1,5 +1,5 @@
 import React from "react";
-
+import {motion} from 'framer-motion';
 
 export default function Portfolio(props) {
   const cardStyle = {
@@ -20,7 +20,10 @@ export default function Portfolio(props) {
 
   return (
     <div>
-      <h1>Portfolio</h1>
+      <motion.h1 
+      initial={{y:-250}}
+      animate={{y:10}}
+      >Portfolio</motion.h1>
       <div className="container" style={gridStyle}>
         <div className="card" style={cardStyle}>
           <a href="https://raeludwig.github.io/Forked_Job_Finder/">

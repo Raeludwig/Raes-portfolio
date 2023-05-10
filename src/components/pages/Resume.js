@@ -1,9 +1,13 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 
 export default function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
+      <motion.h1
+       initial={{y:-250}}
+       animate={{y:10}} 
+      >Resume</motion.h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
