@@ -2,6 +2,7 @@
   "name": "00-practice-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://raeludwig.github.io",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "framer-motion": "^10.12.9",
+    "gh-pages": "^5.0.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-router-dom": "^5.1.2",
@@ -22,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
