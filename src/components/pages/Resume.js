@@ -1,25 +1,40 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 
-export default function Resume() {
-  return (
-    <div>
-      <motion.h1
-       initial={{y:-250}}
-       animate={{y:10}} 
-      >Resume</motion.h1>
-      <p class="container">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-    </div>
-  );
+class Resume extends React.Component {
+
+  downloadResume = () => {
+    fetch('http://localhost:3000/resume/download')
+      .then(response => {
+        response.blob().then(blob => {
+          let url = window.URL.createObjectURL(blob);
+          let a = document.createElement('a');
+          a.href = url;
+          a.download = 'resume.pdf';
+          a.click();
+        });
+        //window.location.href = response.url;
+    });
+  }
+  
+  render() {
+    return (
+      <div class="container">
+        <motion.h1
+          initial={{y:-250}}
+          animate={{y:10}} 
+        >
+          Resume
+        </motion.h1>
+        <p class="container">
+        </p>
+        <h1>Download File using React App</h1>
+        <h3>Download Resume using Button</h3>
+        <button onClick={this.downloadResume}>Download</button>
+        <p></p>
+      </div>
+    )
+  }
 }
+
+export default Resume;
