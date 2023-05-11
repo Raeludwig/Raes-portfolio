@@ -96,6 +96,7 @@ const Contact = () => {
       <motion.h1 initial={{ y: -250 }} animate={{ y: 0 }}>
         Contact Page
       </motion.h1>
+      
       <div className="container mt-5">
         <h2 className="mb-3">Send me a message!</h2>
         <ContactForm onSubmit={handleSubmit} />

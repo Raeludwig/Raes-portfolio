@@ -8,22 +8,25 @@ body {
   background-color: #5AC3B0;
   width: 100%;
   margin: 0 auto;
-  color:white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
-.nav-tabs{
- 
+.nav-tabs {
+
   font-family: 'Amatic SC', cursive;
   font-size: larger;
   display: flex;
-justify-content: right;
-margin-right:30px;
+  justify-content: right;
+  margin-right: 30px;
 }
 
-#header{
-   background-color: #F7CD46;
-   width: 100%;
+#header {
+  background-color: #F7CD46;
+  width: 100%;
 }
 
 .nav-link {
@@ -32,14 +35,11 @@ margin-right:30px;
 
 footer {
   background-color: #F7CD46;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-.currentPage{
- 
-}
 
-h1{
+h1 {
   font-family: 'Caveat', cursive;
 }
 
@@ -55,5 +55,18 @@ h1{
 
 .btn:hover {
   background-color: #F7CD46;
-  color:#DE5935
+  color: #DE5935
+}
+
+h2 {
+  display: block;
+  margin:50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+  text-align: center;
 }
