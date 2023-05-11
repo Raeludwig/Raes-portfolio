@@ -42,3 +42,18 @@ footer {
 h1{
   font-family: 'Caveat', cursive;
 }
+
+.btn {
+  background-color: #DE5935;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #F7CD46;
+  color:#DE5935
+}
