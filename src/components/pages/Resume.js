@@ -1,47 +1,36 @@
 import React from 'react';
-import {motion} from 'framer-motion';
-import "./styles/Resume.css";
+import { motion } from 'framer-motion';
+import resumeImage from './styles/resume.jpg';
 
 class Resume extends React.Component {
-
   downloadResume = () => {
-    fetch('http://localhost:3000/resume/download')
-      .then(response => {
-        response.blob().then(blob => {
-          let url = window.URL.createObjectURL(blob);
-          let a = document.createElement('a');
-          a.href = url;
-          a.download = 'resume.jpg';
-          a.click();
-        });
-        //window.location.href = response.url;
-    });
+    const link = document.createElement('a');
+    link.href = resumeImage;
+    link.download = 'resume.jpg';
+    link.click();
   }
-  
+
   render() {
     return (
       <div>
         <motion.h1
-          initial={{y:-250}}
-          animate={{y:10}} 
+          initial={{ y: -250 }}
+          animate={{ y: 10 }}
         >
           Resume
         </motion.h1>
-        <div class="container">
-        
-        <p class="resume-container">
-       
-        
-        <img
+        <div className="container">
+          <p className="resume-container">
+            <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/resume.jpg"}
+              src={resumeImage}
               alt="resume"
             />
-        <button onClick={this.downloadResume}>Download Resume</button>
-        <p></p></p> 
+            <button onClick={this.downloadResume}>Download Resume</button>
+          </p>
+        </div>
       </div>
-      </div>
-    )
+    );
   }
 }
 
