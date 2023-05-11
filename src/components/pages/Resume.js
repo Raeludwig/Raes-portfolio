@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion} from 'framer-motion';
+import "./styles/Resume.css";
 
 class Resume extends React.Component {
 
@@ -19,19 +20,26 @@ class Resume extends React.Component {
   
   render() {
     return (
-      <div class="container">
+      <div>
         <motion.h1
           initial={{y:-250}}
           animate={{y:10}} 
         >
           Resume
         </motion.h1>
-        <p class="container">
-        </p>
-        <h1>Download File using React App</h1>
-        <h3>Download Resume using Button</h3>
-        <button onClick={this.downloadResume}>Download</button>
-        <p></p>
+        <div class="container">
+        
+        <p class="resume-container">
+       
+        
+        <img
+              className="card-img-top"
+              src={process.env.PUBLIC_URL + "/resume.jpg"}
+              alt="resume"
+            />
+        <button onClick={this.downloadResume}>Download Resume</button>
+        <p></p></p> 
+      </div>
       </div>
     )
   }
