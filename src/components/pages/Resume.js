@@ -10,7 +10,7 @@ class Resume extends React.Component {
           let url = window.URL.createObjectURL(blob);
           let a = document.createElement('a');
           a.href = url;
-          a.download = 'resume.pdf';
+          a.download = 'resume.jpg';
           a.click();
         });
         //window.location.href = response.url;
