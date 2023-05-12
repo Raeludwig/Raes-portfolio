@@ -47,7 +47,9 @@ MIT
 
 ---
 ## Deployment
-[https://whispering-garden-84047.herokuapp.com/](https://raeludwig.github.io/Raes-portfolio/)
+[https://raeludwig.github.io/Raes-portfolio/]
 
 ## Examples
 ![image](https://github.com/Raeludwig/forked-moon-dollars/assets/118871515/6f346797-ffce-41d6-affb-4bd6126f6bbe)
+
+![image](https://github.com/Raeludwig/forked-moon-dollars/assets/118871515/d87b5590-cb1a-48a8-9637-7a60f678b25e)
