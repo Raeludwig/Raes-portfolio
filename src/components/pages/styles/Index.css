@@ -87,8 +87,17 @@ form {
   text-align: center;
 }
 
-p{
-  font-size: 1.9vw;
+a, p, .deployed{
+  font-size: 3vw;
   font-family: 'Amatic SC', cursive;
   text-align: center;
+  justify-content: center;
+  color:white
+  
 }
+
+.deployed {
+  display: block;
+  margin: 0 auto;
+}
+

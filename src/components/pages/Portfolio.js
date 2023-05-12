@@ -35,7 +35,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>Job Search Quiz</p>
+          <a class= "deployed" href="https://raeludwig.github.io/Forked_Job_Finder/">Job Search Quiz</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/Forked_Job_Finder">GitHub Repository</a>
         </div>
 
         <div>
@@ -53,7 +54,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>MoonDollars- Coffee app</p>
+          <a class= "deployed" href="https://whispering-garden-84047.herokuapp.com/">MoonDollars Coffee Saver</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/forked-moon-dollars">GitHub Repository</a>
         </div>
 
         <div>
@@ -72,7 +74,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>Text Editor</p>
+          <a class= "deployed" href="https://desolate-meadow-93910.herokuapp.com/">Text Editor</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/PWA-Text-Editor">GitHub Repository</a>
         </div>
 
         <div>
@@ -91,7 +94,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>Scheduler</p>
+          <a class= "deployed" href="https://raeludwig.github.io/calendar-application-M5/">Online Scheduler</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/calendar-application-M5">GitHub Repository</a>
         </div>
 
         <div>
@@ -110,7 +114,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>Password Generator</p>
+          <a class= "deployed" href="https://raeludwig.github.io/password-generator/">Password Generator</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/password-generator">GitHub Repository</a>
         </div>
 
         <div>
@@ -129,7 +134,8 @@ export default function Portfolio(props) {
               alt="Card cap"
             />
           </motion.a>
-          <p>Tech Blog</p>
+          <a class= "deployed" href="https://damp-beyond-37122.herokuapp.com/">Tech Blog</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/tech-blog">GitHub Repository</a>
         </div>
 
         <div>
