@@ -1,19 +1,21 @@
 .Footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 45px;
-    
-  }
-  
-  .social-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
-  
-  }
-  
-  .social-icon a {
-    margin-right: 25px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5%;
+  background-color: #F7CD46;
+  margin-top: 30px;
+}
+
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.social-icon a {
+  margin-right: 25px;
+}
