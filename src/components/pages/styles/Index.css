@@ -19,10 +19,11 @@ body {
 .nav-tabs {
 
   font-family: 'Amatic SC', cursive;
-  font-size: larger;
+  font-size: 1.25vw;
   display: flex;
   justify-content: right;
   margin-right: 30px;
+  color:#DE5935
   
 
 }
@@ -73,7 +74,7 @@ form {
 
 
 p, .deployed{
-  font-size: 3vw;
+  font-size: 1vw;
   font-family: 'Amatic SC', cursive;
   text-align: center;
   justify-content: center;
@@ -84,5 +85,6 @@ p, .deployed{
 .deployed {
   display: block;
   margin: 0 auto;
+ 
 }
 
