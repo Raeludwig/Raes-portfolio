@@ -58,6 +58,27 @@ export default function Portfolio(props) {
           <a class= "deployed" href="https://github.com/Raeludwig/forked-moon-dollars">GitHub Repository</a>
         </div>
 
+
+        <div>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+            className="card"
+            style={cardStyle}
+            a
+            href="https://github.com/Raeludwig?tab=repositories"
+          >
+            <img
+              className="card-img-top"
+              src={process.env.PUBLIC_URL + "/inner_blossom_affirm.png"}
+              alt="Card cap"
+            />
+          </motion.a>
+          <a class= "deployed"  id="titles" href="https://inner-blossom-13.herokuapp.com/">Inner Blossom</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/inner-blossom">GitHub Repository</a>
+        </div>
+        
         <div>
           <motion.a
             whileHover={{ scale: 1.2 }}
@@ -136,25 +157,6 @@ export default function Portfolio(props) {
           </motion.a>
           <a class= "deployed"  id="titles" href="https://damp-beyond-37122.herokuapp.com/">Tech Blog</a>
           <a class= "deployed" href="https://github.com/Raeludwig/tech-blog">GitHub Repository</a>
-        </div>
-
-        <div>
-          <motion.a
-            whileHover={{ scale: 1.2 }}
-            onHoverStart={(e) => {}}
-            onHoverEnd={(e) => {}}
-            className="card"
-            style={cardStyle}
-            a
-            href="https://github.com/Raeludwig?tab=repositories"
-          >
-            <img
-              className="card-img-top"
-              src={process.env.PUBLIC_URL + "/coming-soon.png"}
-              alt="Card cap"
-            />
-          </motion.a>
-          <p>Wait and see what's next!</p>
         </div>
 
         <div>
