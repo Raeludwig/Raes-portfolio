@@ -1,0 +1,38 @@
+.form-label,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  margin: 0.9vw 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.form-box textarea {
+  height: 15vh;
+}
+
+button {
+  display: inline-block;
+  width: 30%;
+  /* height: 2rem; */
+  color: red;
+  border: 0;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 20px;
+  /* position: absolute; */
+}
+
+
+button {
+  margin: 2rem 0 2rem 12rem;
+  /* margin-left: 52%; */
+  border-radius: 20px 20px 20px 20px;
+}
+
+button {
+  background-color: rgb(245, 245, 78);
+  transition: 1s background ease;
+}

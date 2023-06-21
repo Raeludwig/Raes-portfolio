@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://raeludwig.github.io/Raes-portfolio",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

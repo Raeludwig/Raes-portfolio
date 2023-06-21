@@ -1,96 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
-const ContactForm = ({ onSubmit }) => {
-  const [formStatus, setFormStatus] = React.useState('Send');
-  const [nameError, setNameError] = React.useState(false);
-  const [emailError, setEmailError] = React.useState(false);
-  const [messageError, setMessageError] = React.useState(false);
-  const nameRef = React.useRef(null);
-  const emailRef = React.useRef(null);
-  const messageRef = React.useRef(null);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // validate inputs
-    let nameValid = nameRef.current.checkValidity();
-    let emailValid = emailRef.current.checkValidity();
-    let messageValid = messageRef.current.checkValidity();
-    setNameError(!nameValid);
-    setEmailError(!emailValid);
-    setMessageError(!messageValid);
-
-    if (nameValid && emailValid && messageValid) {
-      setFormStatus('Submitting...');
-      const formData = {
-        name: nameRef.current.value,
-        email: emailRef.current.value,
-        message: messageRef.current.value,
-      };
-      console.log(formData);
-      onSubmit(formData);
-    }
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label className="form-label" htmlFor="name">
-          Name
-        </label>
-        <input
-          ref={nameRef}
-          className={`form-control ${nameError ? 'is-invalid' : ''}`}
-          type="text"
-          id="name"
-          required
-        />
-        {nameError && (
-          <div className="invalid-feedback">Please enter your name.</div>
-        )}
-      </div>
-      <div className="mb-3">
-        <label className="form-label" htmlFor="email">
-          Email
-        </label>
-        <input
-          ref={emailRef}
-          className={`form-control ${emailError ? 'is-invalid' : ''}`}
-          type="email"
-          id="email"
-          required
-        />
-        {emailError && (
-          <div className="invalid-feedback">Please enter a valid email.</div>
-        )}
-      </div>
-      <div className="mb-3">
-        <label className="form-label" htmlFor="message">
-          Message
-        </label>
-        <textarea
-          ref={messageRef}
-          className={`form-control ${messageError ? 'is-invalid' : ''}`}
-          id="message"
-          required
-        ></textarea>
-        {messageError && (
-          <div className="invalid-feedback">Please enter a message.</div>
-        )}
-      </div>
-      <button className="btn" type="submit">
-        {formStatus}
-      </button>
-    </form>
-  );
-};
+import "./styles/Contact.css";
 
 const Contact = () => {
   const handleSubmit = (formData) => {
     console.log('Submitted form data:', formData);
-    // Do something with the form data if needed
   };
 
+  //adding the motion to the 'Contact Page' when you are on the page
   return (
     <div>
       <motion.h1 initial={{ y: -250 }} animate={{ y: 0 }}>
@@ -104,5 +21,79 @@ const Contact = () => {
     </div>
   );
 };
+
+// Sending the email through herotofu to my email address
+const FORM_ENDPOINT = "https://public.herotofu.com/v1/6f1ad500-0f6f-11ee-8267-d3eb100789b4";
+
+const ContactForm = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const inputs = e.target.elements;
+    const data = {};
+
+    for (let i = 0; i < inputs.length; i++) {
+      if (inputs[i].name) {
+        data[inputs[i].name] = inputs[i].value;
+      }
+    }
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Form response was not ok');
+        }
+
+        setSubmitted(true);
+      })
+      .catch((err) => {
+        // Submit the form manually
+        e.target.submit();
+      });
+  };
+
+  if (submitted) {
+    return (
+      <>
+        <h2>Thank you!</h2>
+        <div>We'll be in touch soon.</div>
+      </>
+    );
+  }
+
+  //the actual form for messages
+  return (
+    <form
+      action={FORM_ENDPOINT}
+      onSubmit={handleSubmit}
+      method="POST"
+    >
+      <div className="mb-3">
+        <input className="form-label" type="text" placeholder="Your name" name="name" required />
+      </div>
+      <div className="mb-3">
+        <input className="form-label" type="email" placeholder="Email" name="email" required />
+      </div>
+      <div className="mb-3">
+        <textarea className="form-label" placeholder="Your message" name="message" required />
+      </div>
+      <div className="mb-3">
+        <button type="submit"> Send a message </button>
+      </div>
+    </form>
+
+    
+  );
+  
+};
+
 
 export default Contact;
