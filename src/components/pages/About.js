@@ -16,7 +16,7 @@ export default function About() {
      <motion.h1 
       initial={{y:-250}}
       animate={{y: 0}}
-      >Rae Ludwig</motion.h1>
+      >Rachel Ludwig</motion.h1>
     <div class="container">
       
       <motion.img 
