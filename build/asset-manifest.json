@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Raes-portfolio/static/css/main.39017f65.css",
+    "main.js": "/Raes-portfolio/static/js/main.ebb81ef8.js",
+    "static/media/resume.jpg": "/Raes-portfolio/static/media/resume.aba86ebdc786d66915d7.jpg",
+    "index.html": "/Raes-portfolio/index.html",
+    "main.39017f65.css.map": "/Raes-portfolio/static/css/main.39017f65.css.map",
+    "main.ebb81ef8.js.map": "/Raes-portfolio/static/js/main.ebb81ef8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39017f65.css",
+    "static/js/main.ebb81ef8.js"
+  ]
+}
