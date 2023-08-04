@@ -107,16 +107,16 @@ export default function Portfolio(props) {
             className="card"
             style={cardStyle}
             a
-            href="https://desolate-meadow-93910.herokuapp.com/"
+            href="https://raeludwig.github.io/weather-app-react/"
           >
             <img
               className="card-img-top"
-              src={process.env.PUBLIC_URL + "/JATE.png"}
+              src={process.env.PUBLIC_URL + "/weather-app.png"}
               alt="Card cap"
             />
           </motion.a>
-          <a class= "deployed" id="titles" href="https://desolate-meadow-93910.herokuapp.com/">Text Editor</a>
-          <a class= "deployed" href="https://github.com/Raeludwig/PWA-Text-Editor">GitHub Repository</a>
+          <a class= "deployed" id="titles" href="https://raeludwig.github.io/weather-app-react/">React Weather App</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/weather-app-react">GitHub Repository</a>
         </div>
 
         <div>
