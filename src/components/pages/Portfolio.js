@@ -127,6 +127,26 @@ export default function Portfolio(props) {
             className="card"
             style={cardStyle}
             a
+            href="https://desolate-meadow-93910.herokuapp.com/"
+          >
+            <img
+              className="card-img-top"
+              src={process.env.PUBLIC_URL + "/JATE.png"}
+              alt="Card cap"
+            />
+          </motion.a>
+          <a class= "deployed" id="titles" href="https://desolate-meadow-93910.herokuapp.com/">Text Editor</a>
+          <a class= "deployed" href="https://github.com/Raeludwig/PWA-Text-Editor">GitHub Repository</a>
+        </div>
+
+        <div>
+          <motion.a
+            whileHover={{ scale: 1.2 }}
+            onHoverStart={(e) => {}}
+            onHoverEnd={(e) => {}}
+            className="card"
+            style={cardStyle}
+            a
             href="https://raeludwig.github.io/calendar-application-M5/"
           >
             <img
